@@ -1,0 +1,78 @@
+
+.qp-header-label {
+    display: inline-block;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 4px 12px;
+    color: #000;
+    white-space: nowrap;
+  }
+  
+  .qp-question-label {
+    display: inline-block;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 4px 12px;
+    color: #000;
+    margin-bottom: 12px;
+    white-space: nowrap;
+  }
+  
+  .qp-answer-wrapper {
+    display: block;
+    width: fit-content;
+    background-color: #5ea4ff;
+    border-radius: 12px;
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    white-space: nowrap;
+    
+  }
+ /* Эффект серой тени позади всей панели */
+.vkuiPanel {
+  position: relative !important;
+  overflow: visible !important;
+}
+.vkuiPanel::before {
+  content: '';
+  position: absolute;
+  left: -150px;
+  top: -100px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(0,0,0,0.1), transparent 70%);
+  border-radius: 50%;
+  z-index: -1;
+  pointer-events: none;
+}
+/* Эффект серой тени под активным VKUI-панелем */
+.vkuiView__panel, .vkuiView__panel--active {
+  position: relative !important;
+  overflow: visible !important;
+}
+.vkuiView__panel::before, .vkuiView__panel--active::before {
+  content: '';
+  position: absolute;
+  left: -150px;
+  top: -100px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(0,0,0,0.1), transparent 70%);
+  border-radius: 50%;
+  z-index: -1;
+  pointer-events: none;
+}
+/* Фоновое изображение панели из public/images */
+.qp-panel-wrapper {
+  background-image: url('/images/555.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+};
+
+@media (max-width: 600px) {
+  .qp-question-label {
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+  }
+}

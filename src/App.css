@@ -1,0 +1,88 @@
+/* === src/App.css === */
+
+/* 1. Общий фон приложения + переопределение переменных VKUI */
+html,
+body,
+#root,
+.vkuiAppRoot {
+  background: linear-gradient(90deg, #5ea4ff 0%, #ffffff 100%);
+
+  /* Переменные темы VKUI */
+  --vkui--color_background_page: #ffffff !important;
+  --vkui--color_background_content: #ffffff !important;
+  --background_content:  hsl(0, 0%, 100%) !important;
+  --header_background: linear-gradient(90deg, #5ea4ff 0%, #ffffff 100%);
+  
+  --accent: #ffffff;
+  --icon_tertiary: #edf0f3;
+  --background_hover: #ffffff00;
+  --background_highlighted: rgba(255, 255, 255, 0);
+  
+  
+
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Сбрасываем фон у ключевых контейнеров VKUI (не трогаем тени) */
+.vkuiPanel,
+.vkuiPanel__in,
+.vkuiView__panel,
+.vkuiDiv,
+.vkuiGroup,
+.vkuiGroup__inner,
+.vkuiFormLayout,
+.vkuiFormLayoutGroup,
+.vkuiFormItem,
+.vkuiContent {
+  background: transparent !important;
+}
+
+/* 3. Класс для разблокировки кликов в dev-режиме */
+body.vkui-dev-fix {
+  pointer-events: auto !important;
+  user-select: text !important;
+}
+
+/* 4. Ваш кастомный «белый» card — без изменений */
+.white-card {
+  background: #462b2b !important;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.486);
+  padding: 16px;
+}
+
+/* 5. Восстановление стандартных цветов кнопок VKUI */
+.vkuiButton--mode-primary .vkuiButton__in {
+  background-color: var(--vkui--color_button_background_primary) !important;
+  color: var(--vkui--color_button_foreground_primary) !important;
+}
+
+.vkuiButton--mode-secondary .vkuiButton__in {
+  background-color: var(--vkui--color_button_background_secondary) !important;
+  color: var(--vkui--color_button_foreground_secondary) !important;
+}
+
+.vkuiButton--mode-commerce .vkuiButton__in {
+  background-color: var(--vkui--color_button_background_commerce) !important;
+  color: var(--vkui--color_button_foreground_commerce) !important;
+}
+.qp-answer-wrapper:hover {
+  background-color: #5ea4ff91;
+}
+
+body {
+  /* путь к картинке из public/ */
+  background-image: url('/images/555.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* если нужно, можно затемнить фон */
+  /* background-color: rgba(0,0,0,0.2); */
+  /* background-blend-mode: darken; */
+}
+html, body, #root {
+  overflow-x: hidden;
+}
