@@ -150,20 +150,6 @@ export default function ResultPanel({ id, data, go }) {
     Пройти снова
   </Button>
 
-  {/* 2. Кнопка «Поддержать автора» через VK Donut */}
-  <Button
-    size="l"
-    mode="commerce"
-    style={{ marginTop: 12 }}
-    onClick={() =>
-      bridge.send('VKWebAppShowDonutSubscriptionBox', {
-        group_id: 230504742,     // ← ваш ID группы
-        suggested_price: 99      // ₽: 49 / 99 / 149 / 299
-      })
-    }
-  >
-    Поддержать автора&nbsp;(99&nbsp;₽)
-  </Button>
 </Div>
 
         </Div>
