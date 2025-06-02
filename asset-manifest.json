@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/vk-ptsd-test/static/css/main.6036b6cb.chunk.css",
+    "main.js": "/vk-ptsd-test/static/js/main.1595f4e4.chunk.js",
+    "main.js.map": "/vk-ptsd-test/static/js/main.1595f4e4.chunk.js.map",
+    "runtime~main.js": "/vk-ptsd-test/static/js/runtime~main.5a145df9.js",
+    "runtime~main.js.map": "/vk-ptsd-test/static/js/runtime~main.5a145df9.js.map",
+    "static/css/2.ad53036d.chunk.css": "/vk-ptsd-test/static/css/2.ad53036d.chunk.css",
+    "static/js/2.2a38964d.chunk.js": "/vk-ptsd-test/static/js/2.2a38964d.chunk.js",
+    "static/js/2.2a38964d.chunk.js.map": "/vk-ptsd-test/static/js/2.2a38964d.chunk.js.map",
+    "index.html": "/vk-ptsd-test/index.html",
+    "precache-manifest.e1c754fa9a017f326c6774ed3375ab2f.js": "/vk-ptsd-test/precache-manifest.e1c754fa9a017f326c6774ed3375ab2f.js",
+    "service-worker.js": "/vk-ptsd-test/service-worker.js",
+    "static/css/2.ad53036d.chunk.css.map": "/vk-ptsd-test/static/css/2.ad53036d.chunk.css.map",
+    "static/css/main.6036b6cb.chunk.css.map": "/vk-ptsd-test/static/css/main.6036b6cb.chunk.css.map",
+    "static/media/555.png": "/vk-ptsd-test/static/media/555.b5e9bf96.png"
+  }
+}
